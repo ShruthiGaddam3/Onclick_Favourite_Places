@@ -27,21 +27,21 @@
                 </div>
                 <img src="https://img.freepik.com/free-photo/mesmerizing-shot-famous-historic-taj-mahal-agra-india_181624-16028.jpg?t=st=1722590235~exp=1722593835~hmac=dae73e271f503156ce447da4362c95ccf74e1a22a987a641503bdf2dbe1d961b&w=900" class = "favourite-place-image"/>
             </div>
-            <div class = "favourite-place-container d-flex flex-row">
+            <div class = "favourite-place-container d-flex flex-row" onclick="display('sectionGoldenTempleDetailedView')">
                 <div>
                     <h1 class="favourite-place-main-heading">Golden Temple</h1>
                     <p class = "favourite-place-paragraph">The Golden Temple in Amritsar, India, is a Sikh gurdwara known for its golden façade and spiritual significance. It is a major pilgrimage site for Sikhs worldwide.</p>
                 </div>
                 <img src="https://img.freepik.com/free-photo/view-world-monument-celebrate-world-heritage-day_23-2151297141.jpg?t=st=1722594958~exp=1722598558~hmac=c6c910e464045aef5f0577f195a99e6dbd1733ec38950ac6841e9dbf36d91daf&w=900" class = "favourite-place-image"/>
             </div>
-            <div class = "favourite-place-container d-flex flex-row">
+            <div class = "favourite-place-container d-flex flex-row" onclick="display('sectionYadagiriGuttaDetailedView')">
                 <div>
                     <h1 class="favourite-place-main-heading">Yadagiri Gutta</h1>
                     <p class = "favourite-place-paragraph">It is a revered Hindu temple dedicated to Lord Narasimha. It is a significant pilgrimage site known for its spiritual importance and scenic hilltop setting, it is located in hyderabad.</p>
                 </div>
                 <img src="https://img.freepik.com/premium-photo/exterior-temple-against-clear-blue-sky_1048944-12292546.jpg?w=360" class = "favourite-place-image"/>
             </div>
-            <div class = "favourite-place-container d-flex flex-row">
+            <div class = "favourite-place-container d-flex flex-row" onclick="display('sectionSwarnagiriDetailedView')">
                 <div>
                     <h1 class="favourite-place-main-heading">Swarnagiri</h1>
                     <p class = "favourite-place-paragraph">Its golden structure and spiritual significance attracts numerous pilgrims and visitors for its divine ambiance and striking architecture, it located in hyderabad.</p>
@@ -83,7 +83,145 @@
                 </div>
                 <div class="background-text-container">
                     <h1 class="detailed-view-text-container"> Taj Mahal</h1>
-                    <p class="detailed-view-paragrah">The Taj Mahal, located in Agra, India, is a stunning white marble mausoleum built by the Mughal Emperor Shah Jahan in memory of his beloved wife, Mumtaz Mahal. Completed in 1653, it stands as an epitome of Mughal architecture, blending elements of Islamic, Persian, and Indian styles. Renowned for its symmetrical beauty, intricate carvings, and exquisite inlay work, the Taj Mahal is a UNESCO World Heritage Site and one of the New Seven Wonders of the World, attracting millions of visitors annually. Its iconic dome, reflective pools, and lush gardens create a serene and majestic ambiance.</p>
+                    <p class="detailed-view-paragraph">The Taj Mahal, located in Agra, India, is a stunning white marble mausoleum built by the Mughal Emperor Shah Jahan in memory of his beloved wife, Mumtaz Mahal. Completed in 1653, it stands as an epitome of Mughal architecture, blending elements of Islamic, Persian, and Indian styles. Renowned for its symmetrical beauty, intricate carvings, and exquisite inlay work, the Taj Mahal is a UNESCO World Heritage Site and one of the New Seven Wonders of the World, attracting millions of visitors annually. Its iconic dome, reflective pools, and lush gardens create a serene and majestic ambiance.</p>
+                    <ol class="golden-temple-list">
+                        <li>Monument: Iconic white marble mausoleum</li>
+                        <li>ocation: Agra, Uttar Pradesh, India</li>
+                        <li>Built By: Emperor Shah Jahan for Mumtaz Mahal</li>
+                        <li>Design: Mughal architecture, intricate inlay work</li>
+                    </ol>
+                </div>
+            </div>
+            <button onclick="display('sectionFavouritePlaces')" class="back-button">back</button>
+        </div> 
+    </div>
+    <div id="sectionGoldenTempleDetailedView">
+        <div class="bg-container-image">
+            <h1 class = "bg-text"> Detailed View</h1>
+            <div class="detailed-view-card-container"> 
+                <div id="carouselGoldenTempleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselGoldenTempleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselGoldenTempleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselGoldenTempleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://th.bing.com/th/id/OIP.pM83G-3rqSu9c1HdNmVjBAHaE7?rs=1&pid=ImgDetMain" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://th.bing.com/th/id/OIP.UPnfgrIDZI6JmFDkhBjjBQHaEf?rs=1&pid=ImgDetMain" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://th.bing.com/th/id/OIP.a4FDdevx4Q3aP6HpYxkJXAAAAA?rs=1&pid=ImgDetMain" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGoldenTempleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGoldenTempleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>                  
+                </div>
+                <div class="background-text-container">
+                    <h1 class="detailed-view-text-container">Golden Temple</h1>
+                    <p class="detailed-view-paragraph">The Golden Temple, or Harmandir Sahib, located in Amritsar, Punjab, is the holiest shrine in Sikhism and a symbol of peace, spirituality, and inclusivity. Known for its stunning golden architecture and surrounded by the sacred Amrit Sarovar, the temple was completed in 1604 under the guidance of Guru Arjan Dev Ji. It is home to the Guru Granth Sahib, the central Sikh scripture, and offers free meals through its renowned langar to all visitors, irrespective of their background</p>
+                    <ul class="golden-temple-list">
+                        <li>Location: Amritsar, Punjab</li>
+                        <li>Founded: 1604 by Guru Arjan Dev Ji</li>
+                        <li>Significance: Holiest site in Sikhism</li>
+                        <li>Unique Features: Gold-covered structure</li>
+                    </ul>
+                </div>
+            </div>
+            <button onclick="display('sectionFavouritePlaces')" class="back-button">back</button>
+        </div> 
+    </div>
+    <div id="sectionYadagiriGuttaDetailedView">
+        <div class="bg-container-image">
+            <h1 class = "bg-text"> Detailed View</h1>
+            <div class="detailed-view-card-container"> 
+                <div id="carouselYadagiriGuttaIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselYadagiriGuttaIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselYadagiriGuttaIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselYadagiriGuttaIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://th.bing.com/th/id/OIP.KDxNSbfHyDuwu07SxqtwQwHaEK?rs=1&pid=ImgDetMain" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://cdnb.artstation.com/p/assets/images/images/014/783/847/large/ramesh-bandi-001.jpg?1545465344" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://journalsofindia.com/wp-content/uploads/2022/02/Statue-of-Equality.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselYadagiriGuttaIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselYadagiriGuttaIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>                  
+                </div>
+                <div class="background-text-container">
+                    <h1 class="detailed-view-text-container">Yadagiri Gutta</h1>
+                    <p class="detailed-view-paragraph">Yadagirigutta, now officially known as Yadadri, is a significant Hindu pilgrimage site located in the Yadadri Bhuvanagiri district of Telangana, India. The temple is dedicated to Lord Lakshmi Narasimha, an incarnation of Lord Vishnu, and is situated on a hillock surrounded by lush greenery. Known for its unique rock formations and serene environment, the temple attracts thousands of devotees seeking the blessings of Lord Narasimha. The temple complex has recently undergone extensive renovations, transforming it into a grand structure with intricate carvings and a blend of ancient and modern architectural styles.</p>
+                    <ul class="golden-temple-list">
+                        <li>Location: Yadadri Bhuvanagiri district, Telangana</li>
+                        <li>Deity: Lord Lakshmi Narasimha (incarnation of Lord Vishnu)</li>
+                        <li>Significance: Major pilgrimage site in South India</li>
+                        <li>Unique Features: Hilltop temple</li>
+                    </ul>
+                </div>
+            </div>
+            <button onclick="display('sectionFavouritePlaces')" class="back-button">back</button>
+        </div> 
+    </div>
+    <div id="sectionSwarnagiriDetailedView">
+        <div class="bg-container-image">
+            <h1 class = "bg-text"> Detailed View</h1>
+            <div class="detailed-view-card-container"> 
+                <div id="carouselSwarnagiri" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselSwarnagiri" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselSwarnagiri" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselSwarnagiri" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-c1-img.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://cdn.holidayguru.es/wp-content/uploads/2020/04/Taj-Mahal-sunset-with-reflections-iStock_4312905_LARGE-2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2019/06/GettyImages-936994634.jpg?fit=2097%2C1430px&ssl=1" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSwarnagiri" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSwarnagiri" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>                  
+                </div>
+                <div class="background-text-container">
+                    <h1 class="detailed-view-text-container">Swarnagiri</h1>
+                    <p class="detailed-view-paragraph">Swarnagiri, located in Hyderabad, Telangana, is a notable spiritual destination known for its ancient temple dedicated to Lord Lakshmi Narasimha. Positioned on a serene hill, the temple offers a tranquil retreat from the bustling city. The site is celebrated for its beautiful surroundings, intricate temple architecture, and the divine atmosphere it provides. Swarnagiri attracts devotees and visitors seeking spiritual solace and a peaceful environment.</p>
+                    <ul class="golden-temple-list">
+                        <li>Location: Hyderabad, Telangana</li>
+                        <li>Deity: Lord Lakshmi Narasimha (incarnation of Lord Vishnu)</li>
+                        <li>Significance: Spiritual destination and ancient temple site</li>
+                        <li>Unique Features: Hilltop location</li>
+                    </ul>               
                 </div>
             </div>
             <button onclick="display('sectionFavouritePlaces')" class="back-button">back</button>
