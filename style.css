@@ -109,3 +109,6 @@
 .ordered-list-style{
     list-style-type: upper-latin;
 }
+.button-styling{
+    margin: 15px;
+}
